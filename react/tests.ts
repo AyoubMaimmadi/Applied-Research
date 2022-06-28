@@ -11,8 +11,6 @@ const index = fs
   .toString()
 
 function render(size: number, depth: number): string {
-  // @ts-ignore this ignore is for champions and anyone who says differently
-  // will be banned
   return index.replace('__REPLACE_THIS__', serverMain(size, depth))
 }
 
