@@ -11,7 +11,7 @@ var index = fs
   .toString()
 function render(size, depth) {
   return index.replace(
-    '__REPLACE_THIS__',
+    'run the app using /render/number1/number2',
     (0, main_server_1['default'])(size, depth)
   )
 }
