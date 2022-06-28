@@ -26,7 +26,7 @@ app.use('/:size/:depth', function (req, res) {
   var size = +req.params.size
   var depth = +req.params.depth
   var html = index.replace(
-    '__REPLACE_THIS__',
+    'run the app using /render/number1/number2',
     (0, main_server_1['default'])(size, depth)
   )
   res

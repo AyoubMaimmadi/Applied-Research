@@ -11,7 +11,10 @@ const index = fs
   .toString()
 
 function render(size: number, depth: number): string {
-  return index.replace('__REPLACE_THIS__', serverMain(size, depth))
+  return index.replace(
+    'run the app using /render/number1/number2',
+    serverMain(size, depth)
+  )
 }
 
 function renderLoop(count: number, size: number, depth: number): number {

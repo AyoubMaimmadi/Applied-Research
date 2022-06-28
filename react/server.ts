@@ -31,7 +31,10 @@ app.use('/:size/:depth', function (req, res) {
   const size = +req.params.size
   const depth = +req.params.depth
 
-  const html = index.replace('__REPLACE_THIS__', serverMain(size, depth))
+  const html = index.replace(
+    'run the app using /render/number1/number2',
+    serverMain(size, depth)
+  )
   res
     .setHeader('time-taken', getMicroTime() - now)
     .status(200)
