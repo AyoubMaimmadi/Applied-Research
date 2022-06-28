@@ -35,6 +35,6 @@ app.use('/:size/:depth', function (req, res) {
     .set({ 'Content-Type': 'text/html' })
     .end(html)
 })
-app.listen(3000, function () {
-  console.log('http://localhost:3000')
+app.listen(3001, function () {
+  console.log('http://localhost:3001')
 })
