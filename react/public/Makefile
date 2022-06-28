@@ -10,5 +10,5 @@ server:
 node-server:
 	./node_modules/.bin/tsc server.ts
 
-testies:
+tests:
 	./node_modules/.bin/tsc testies.ts
