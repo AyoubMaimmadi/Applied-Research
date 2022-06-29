@@ -1,1 +1,0 @@
-Comparison between React with TypeScript and Web Assembly with Rust.  
