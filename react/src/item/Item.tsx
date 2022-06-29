@@ -16,9 +16,9 @@ function renderInners(props: ItemConfig) {
 
 export default function Item(props: ItemConfig) {
   const isEven = Boolean(props.depth & 0x1)
-  let backgroundColor = '#ff9500'
+  let backgroundColor = '#222'
   if (isEven === hasBackground(props)) {
-    backgroundColor = '#0385ff'
+    backgroundColor = 'darkgrey'
   }
 
   const styles = {
